@@ -7161,6 +7161,16 @@ html.lb-disable-scrolling {
     margin-bottom: 0
 }
 
+#instagram {
+    background-image: url("")
+}
+
+#instagram .instagram-bg {
+    background-color: rgba(0,0,0,0.5);
+    padding: 60px 0;
+    color: #fff
+}
+
 .footer-2 {
     width: 100%;
     padding: 3rem 0 0 0

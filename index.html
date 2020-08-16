@@ -6,6 +6,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 		<meta name="description" content="Change the code is the first gender inclusion club in the tech industry, founded in Hong Kong.">
 		<title>Change The Code</title>
+		 
 		<link href="app.min.css" rel="stylesheet">
 		<link href="ahsan.css" rel="stylesheet">
 		<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.3.1/css/all.css" integrity="sha384-mzrmE5qonljUremFsqc01SB46JvROS7bZs3IO2EmfFsd15uHvIt+Y8vEf7N7fWAU" crossorigin="anonymous">
@@ -46,6 +47,8 @@
 		</div>
 	</nav>
 
+ 
+
 	<!-- ///// Header ///// -->
 	<header class="header header-img img-full parallax">
 		<div class="header-content">
@@ -54,13 +57,35 @@
 					<h1 class="content-title">#BuildingProgramHers</h1>
 					<p class="content-desc">Change the Code is a student-led organization started at the University of Hong Kong which aims to improve the gender ratio in the STEM industry, by encouraging more female students to take up science and technology related subjects.</p>
 					<a href="https://codesplash.app/" class="btn btn-o-default">Let's get coding!</a>
+					
+					<script type="text/javascript" src="js/counter.js"></script>
+					
 				</div>
 			</div>
 		
 		</div>
 	</header>
-
-
+<!--
+	<script src="js/index.js"></script>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
+	<span class="Counter">150</span>
+ -->      
+	<script type="text/javascript">
+		$('.count').each(function () {
+			$(this).prop('Counter', 0).animate({
+					Counter: $(this).data('value')
+				}, {
+				duration: 1000,
+				easing: 'swing',
+				step: function (now) {                      
+					$(this).text(this.Counter.toFixed(2));
+				}
+   		 });
+		});
+		 
+	</script>
+	<p class="count" data-value="50" >50</p>
+	 
 	<!-- ///// Portfolio ///// -->
 	<section id="portfolio" class="section-margin">
 		<div class="container">
@@ -234,7 +259,7 @@
 							<p>Date: August 22, 2020</p>
 							<p>Time: 10:30am - 1:30pm</p>
 							<p>Sign up link: https://forms.gle/aJmVxY7tvLXDGztz5</p>
-			
+							<p class="author mb-0"></p>
 						</div>
 					</div>
 				</div>
@@ -264,24 +289,24 @@
 							<div class="container">								
 								<div class="row">			
 									<div class="up-content text-center">
-										<h3 class="content-heading">Why do we need more women in Tech?</h3>						
+										<h3 class="content-heading">Why do we need more women in Tech?</h3>	
 										<p class="content-desc mb-0">Hear it from women around the world. Check out our Instagram page for more. See yourself here!</p>
-										</br>
+									</br>
 									</div>
 											
 								</div>
+								
 								<!-- Place <div> tag where you want the feed to appear -->
 								<div id="curator-feed-default-feed-layout"><a href="https://curator.io" target="_blank" class="crt-logo crt-tag">Powered by Curator.io</a></div>
 								<!-- The Javascript can be moved to the end of the html page before the </body> tag -->
 								<script type="text/javascript">
 								/* curator-feed-default-feed-layout */
-									(function(){
-										var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
-										i.src = "https://cdn.curator.io/published/c4462150-7bc6-4da4-baf7-a600f3252f0c.js";
-										e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
-									})();
+								(function(){
+								var i, e, d = document, s = "script";i = d.createElement("script");i.async = 1;
+								i.src = "https://cdn.curator.io/published/c4462150-7bc6-4da4-baf7-a600f3252f0c.js";
+								e = d.getElementsByTagName(s)[0];e.parentNode.insertBefore(i, e);
+								})();
 								</script>
-							</div>
 					</div>
 				</div>
 			</div>
